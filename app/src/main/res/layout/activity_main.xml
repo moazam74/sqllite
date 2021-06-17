@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/new_background"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+           android:text="Student Registration Form"
+           android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:hint="Enter Student Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etCellNumber"
+     android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Student Id"
+        android:inputType="phone" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnsubmit"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnShowData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnshowData"
+        android:text="Show Data" />
+
+    <Button
+        android:id="@+id/btnEditData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnEditData"
+        android:text="EditData" />
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnDeleteData"
+        android:text="DeleteData" />
+</LinearLayout>
